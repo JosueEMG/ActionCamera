@@ -47,10 +47,10 @@ navigator.mediaDevices
 			$('ul').append(`<li >
 								<span class="messageHeader">
 									<span>
-										From 
+										De
 										<span class="messageSender">${userId}</span> 
-										to 
-										<span class="messageReceiver">Everyone:</span>
+										para 
+										<span class="messageReceiver">Todos:</span>
 									</span>
 
 									${new Date().toLocaleString('en-US', {
@@ -133,7 +133,7 @@ const muteUnmute = () => {
 const setMuteButton = () => {
 	const html = `
 	  <i class="fas fa-microphone"></i>
-	  <span>Mute</span>
+	  <span>Mutear</span>
 	`
 	document.querySelector('.mainMuteButton').innerHTML = html
 }
@@ -141,7 +141,7 @@ const setMuteButton = () => {
 const setUnmuteButton = () => {
 	const html = `
 	  <i class="unmute fas fa-microphone-slash"></i>
-	  <span>Unmute</span>
+	  <span>Desmutear</span>
 	`
 	document.querySelector('.mainMuteButton').innerHTML = html
 }
@@ -161,7 +161,7 @@ const playStop = () => {
 const setStopVideo = () => {
 	const html = `
 	  <i class="fas fa-video"></i>
-	  <span>Stop Video</span>
+	  <span>Parar Video</span>
 	`
 	document.querySelector('.mainVideoButton').innerHTML = html
 }
@@ -169,7 +169,7 @@ const setStopVideo = () => {
 const setPlayVideo = () => {
 	const html = `
 	<i class="stop fas fa-video-slash"></i>
-	  <span>Play Video</span>
+	  <span>Reproducir Video</span>
 	`
 	document.querySelector('.mainVideoButton').innerHTML = html
 }
